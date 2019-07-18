@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>中信兄弟主題日滿意度調查</title>
+    <style>
+        * {
+           font-family: 微軟正黑體;
+        }
+        html,body {
+            background-color: #efefef;
+            text-align: center;
+            margin: 0;
+        }
+        img {
+            width: 700px;
+            height: 350px;
+        }
+
+        h3 {
+            font-weight: 900;
+            margin: 10px;
+        }
+        div {
+            margin: 10px;
+        }
+        input {
+            margin: 10px;
+        }
+        #funny {
+            outline: none;
+            background-color: #efefef;
+            border-style: none;
+            border-bottom: 1px solid black;
+            box-sizing: border-box;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <img src="img/brothers.jpg" alt="">
+    <h2>「中信兄弟✘七龍珠超」主題日滿意度調查</h2>
+    <form>
+        <h3>個人調查</h3>
+        <div>
+            <label for="">性別</label>
+            <input type="radio" name="gender" id="men">男
+            <input type="radio" name="gender" id="women">女
+            <input type="radio" name="gender" id="diversify">多元性別
+        </div>
+        
+        <div>
+            <label for="user_phone">電話：</label>
+            <input type="tel" name="user_phone" id="user_phone">
+        </div>
+        
+        <div>
+            年齡
+            <input type="radio" name="age" id="">18歲以下
+            <input type="radio" name="age" id="">18 - 30歲
+            <input type="radio" name="age" id="">31 - 40歲 
+            <input type="radio" name="age" id="">41 - 50歲
+            <input type="radio" name="age" id="">51歲以上
+        </div>
+        
+        <div>
+            <label for="">您的職業</label>
+            <input type="radio" name="job" id="">學生
+            <input type="radio" name="job" id="">教師
+            <input type="radio" name="job" id="">公務員
+            <input type="radio" name="job" id="">其他職業別
+        </div>
+        <h3>活動調查</h3>
+        <div>
+            如何得知活動消息(複選)
+            <input type="checkbox" name="" id="">平常有關注球隊訊息
+            <input type="checkbox" name="" id="">Facebook
+            <input type="checkbox" name="" id="">朋友推薦
+            <input type="checkbox" name="" id="">其他管道
+        </div>
+        <br>
+        <div>
+            活動當天覺得最有趣、印象最深刻的活動內容
+            <br>
+            <input type="text"  placeholder="請輸入文字" name="" id="funny">
+        </div>
+        
+        <div>
+            整體活動滿意度您給幾分?(滿分10分)
+            <input type="number" name="points" id="points" min="0" max="10" step="1" value="5">
+        </div>
+        <input type="submit" value="送出">
+    </form>
+</body>
+</html>
